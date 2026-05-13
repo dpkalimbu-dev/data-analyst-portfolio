@@ -1,0 +1,162 @@
+.experience-section {
+  min-height: 100vh;
+  background: #020617;
+  color: #e2e8f0;
+  padding: 5rem 2rem;
+}
+
+.section-intro,
+.section-title {
+  margin: 0;
+}
+
+.experience-header {
+ display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.4rem;
+  margin-bottom: 3rem;
+  
+}
+.section-intro {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #38bdf8;
+}
+
+.section-title {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #28a5da, #6f3ba0, #1580e4);
+  border-radius: 5px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -54px;
+  top: 65px;
+  width: 15px;
+  height: 15px;
+  background: #38bdf8;
+  border: 5px solid rgb(23, 12, 72);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+}
+
+.timeline-content {
+  background: #07111d;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: 18px;
+  padding: 2rem;
+}
+
+.timeline-content h3 {
+  color: #b7c0ce;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.3rem;
+}
+
+.experience-meta span {
+   display: inline-block;
+  margin: 0.6rem 0 1rem;
+  background: rgba(37, 166, 84, 0.15);
+  color: #22c55e;
+  padding: 5px 15px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border:1px solid rgba(34, 197, 94, 0.15);
+}
+
+.timeline-content ul {
+  margin-top: 1.8rem;
+  padding-left: 1rem;
+}
+
+.timeline-content li {
+  margin-bottom: 0.9rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .experience-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .experience-header{
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .timeline {
+    padding-left: 2.2rem;
+  }
+
+  .timeline-item::before {
+    left: -43px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .timeline {
+    padding-left: 1.8rem;
+  }
+
+  .timeline::before {
+    width: 3px;
+  }
+
+  .timeline-item::before {
+    left: -35px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content {
+    padding: 1.3rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.15rem;
+  }
+}

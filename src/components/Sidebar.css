@@ -1,0 +1,83 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #020617;
+  border-right: 1px solid rgba(148, 163, 184, 0.15);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-top {
+  flex-shrink: 0;
+}
+
+.sidebar-nav {
+  text-align: left;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.sidebar-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.sidebar-role {
+  color: #93c5fd;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.sidebar-nav a {
+ /* transform: scaleY(70%); */
+ transition: all 0.3s ease;
+   color: #9fb1c7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.sidebar-nav a::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  color: #38bdf8;
+   transform: translateX(6px);
+  
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 180px;
+    padding: 1.5rem 1rem;
+  }
+
+  .sidebar-heading {
+    font-size: 1.2rem;
+  }
+
+  .sidebar-nav {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

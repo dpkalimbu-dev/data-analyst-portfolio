@@ -1,0 +1,130 @@
+.section-intro, .section-title{
+    /* padding-top: 1rem; */
+    margin-right: 55rem;
+}
+
+.project-left{
+  text-align: left;
+  padding-top: 1rem;
+}
+.projects-section {
+  min-height: 100vh;
+  background: #020617;
+  color: #e2e8f0;
+  padding: 5rem 2rem;
+}
+
+.projects-subtitle {
+  max-width: 650px;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background: #07111d;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-tags span {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.project-card h3 {
+  color: #f8fafc;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h4 {
+  color: #38bdf8;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-card p,
+.project-card li {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.project-card ul {
+  padding-left: 1.2rem;
+}
+
+.repo-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #f472b6; /* pink accent like template */
+  color: #f472b6;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.repo-btn:hover {
+  background: rgba(244, 114, 182, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-left{
+    text-align: center;
+  }
+
+  .projects-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
