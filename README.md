@@ -18,11 +18,10 @@ A modern responsive portfolio website built for a Data Analyst professional.
 
 ## Live Demo
 
-[Live Site](https://github.com/dpkalimbu-dev/data-analyst-portfolio.git)
+[Live Site](https://dpkalimbu-dev.github.io/data-analyst-portfolio.git)
 
 ## Screenshots
 
-![Sidebar](src/assets/sidebar.png)
 ![Homepage](src/assets/homepage.png)
 ![Aboutpage](src/assets/aboutpage.png)
 ![Skills](src/assets/skills.png)
