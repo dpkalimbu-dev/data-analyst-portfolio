@@ -2,6 +2,20 @@ import "./Experience.css";
 
 const experiences = [
   {
+    role: "Data Analysis Assistant",
+    company: "York Region Educational Services (YRES)",
+    location: "Calgary, AB",
+    date: "May 2026 – Present",
+    bullets: [
+      "Clean, validate, and organize datasets to improve data accuracy, consistency, and reporting reliability.",
+      "Analyze structured datasets to identify trends, patterns, and insights that support organizational and community initiatives.",
+      "Assist in the development of dashboards, reports, and visualizations for stakeholder reporting and decision-making.",
+      "Work with data management and reporting processes within a collaborative remote environment.",
+      "Contribute to improving operational efficiency and data accessibility through analytical support and documentation.",
+      "Strengthen communication and teamwork skills while working across volunteer-led community programs."
+    ],
+  },
+  {
     role: "Inventory Manager",
     company: "Country Wide Auto Group",
     location: "Calgary, AB",
@@ -26,8 +40,9 @@ const experiences = [
       "Strengthened communication and public speaking skills through live broadcasting and audience interaction.",
       "Collaborated with team members to coordinate show schedules, promotions, and segment planning.",
       "Managed live discussions in a fast-paced environment while adapting quickly to schedule or topic changes."
-    ],
+    ]
   }
+  
 ];
 
 function Experience() {

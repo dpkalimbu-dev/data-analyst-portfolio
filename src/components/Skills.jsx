@@ -5,12 +5,12 @@ const skills = [
     icon: "📊",
     title: "Data Analysis",
     description: "Working with datasets, cleaning data, identifying patterns, and preparing insights for business decisions.",
-    tags: ["Advanced Excel", "Pivot Tables", "VLOOKUP", "Power Query", "SQL"],
+    tags: ["Advance Excel", "Pivot Tables", "VLOOKUP", "Power Query", "SQL"],
   },
   {
     icon: "💻",
     title: "Programming",
-    description: "Using Python for data analysis, data cleaning, and basic machine learning workflows.",
+    description: "Using Python for data analysis, Data Cleaning, Validation & KPI Reporting, Exploratory Data Analysis (EDA), and basic machine learning workflows.",
     tags: ["Python", "Pandas", "NumPy", "scikit-learn"],
   },
   {
